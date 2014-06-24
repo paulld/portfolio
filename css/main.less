@@ -33,7 +33,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  /*box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -157,5 +157,29 @@ body {
   .mastfoot,
   .cover-container {
     width: 700px;
+  }
+}
+
+.social-media > li > a {
+  color: hsla(0,50%,100%,1);
+  font-size: 45px;
+  margin: 0 6px;
+}
+.social-media > li > a:hover {
+  color: #181818;
+}
+
+.pld-logo {
+  float: left;
+}
+
+@media (max-width: 992px) {
+  .masthead-nav, .pld-logo {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .pld-logo {
+    margin-bottom: 30px;
   }
 }
