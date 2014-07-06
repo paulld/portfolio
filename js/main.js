@@ -14,19 +14,16 @@
     main.html(biographyTemplate);
     $('#header-navlinks').on('click', '#biography-link', function(e) {
       e.preventDefault();
-      console.log('hi bio');
       main.html(biographyTemplate());
       return setActive('#biography-link');
     });
     $('#header-navlinks').on('click', '#portfolio-link', function(e) {
       e.preventDefault();
-      console.log('hi port');
       main.html(portfolioTemplate());
       return setActive('#portfolio-link');
     });
     return $('#header-navlinks').on('click', '#contact-link', function(e) {
       e.preventDefault();
-      console.log('hi cont');
       main.html(contactTemplate());
       return setActive('#contact-link');
     });
