@@ -33,8 +33,40 @@
       ga('send', 'pageview');
     </script>
 
-    <script id="biography-template" type="text/x-handlebars-template">
-      <section class="main-width-small main-height-large" id="biography">
+  </head>
+
+
+  <body>
+
+    <header id="header" role="header">
+      <div class="head-small">
+        <div class="inner" role="navigation">
+          <div class="pld-logo">
+            <h1 class="sr-only">paul ld | web development</h1>
+            <img src="/assets/images/paulld-logo-webdev.svg" alt="Paul Lugagne Delpon logo" width="170px">
+          </div>
+          <ul id="header-navlinks" class="nav masthead-nav" role="menubar">
+            <li class="active" role="presentation">
+              <a id="biography-link" href="/" role="menuitem">Biography</a>
+            </li>
+            <li role="presentation" data="skillset">
+              <a id="skillset-link" href="/" role="menuitem"  data="skillset">Skillset</a>
+            </li>
+            <li role="presentation">
+              <a id="portfolio-link" href="/" role="menuitem">Portfolio</a>
+            </li>
+            <li role="presentation">
+              <a id="contact-link" href="/" role="menuitem">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
+    <main id="main" class="inner cover" role="main">
+      
+      <section id="biography" class="main-width-small main-height-large">
         <header>
           <h1 class="cover-heading">Biography</h1>
         </header>
@@ -44,11 +76,8 @@
           <a href="#" class="btn btn-lg btn-default">Learn more</a>
         </p> -->
       </section>
-    </script>
 
-
-    <script id="portfolio-template" type="text/x-handlebars-template">
-      <section class="main-width-small main-height-small" id="portfolio">
+      <section id="portfolio" class="main-width-small main-height-small" style="display: none">
         <header>
           <h1 class="cover-heading">Portfolio</h1>
         </header>
@@ -57,15 +86,13 @@
           <a href="#" class="btn btn-lg btn-default">Learn more</a>
         </p> -->
       </section>
-    </script>
 
-    <script id="skillset-template" type="text/x-handlebars-template">
-      <section class="main-width-small main-height-small" id="contact">
+      <section id="skillset" class="main-width-medium main-height-large" style="display: none">
         <header>
           <h1 class="cover-heading">Skills</h1>
         </header>
         <div class="skills-list">
-          <dl class="lead">
+          <dl class="dl-horizontal">
             <dt>Markup languages</dt>
             <dd>HTML5, Slim, Emblem</dd>
             
@@ -93,54 +120,20 @@
           </dl>
         </div>
       </section>
-    </script>
 
-    <script id="contact-template" type="text/x-handlebars-template">
-      <section class="main-width-small main-height-small" id="contact">
+      <section id="contact" class="main-width-small main-height-small" style="display: none">
         <header>
           <h1 class="cover-heading">Contact</h1>
         </header>
-        <p class="lead">You may contact by email:</p>
+        <p class="lead">Please may contact me by email:</p>
         <p class="lead">paul.lugagnedelpon [at] gmail [dot] com</p>
         <!-- <p class="lead">
           <a href="#" class="btn btn-lg btn-default">Learn more</a>
         </p> -->
       </section>
-    </script>
 
-  </head>
-
-
-  <body>
-
-    <header id="header" role="header">
-      <div class="head-small">
-        <div class="inner" role="navigation">
-          <div class="pld-logo">
-            <h1 class="sr-only">paul ld | web development</h1>
-            <img src="/assets/images/paulld-logo-webdev.svg" alt="Paul Lugagne Delpon logo" width="170px">
-          </div>
-          <ul id="header-navlinks" class="nav masthead-nav" role="menubar">
-            <li class="active" role="presentation">
-              <a id="biography-link" href="/" role="menuitem">Biography</a>
-            </li>
-            <li class="active" role="presentation">
-              <a id="skillset-link" href="/" role="menuitem">Skillset</a>
-            </li>
-            <li role="presentation">
-              <a id="portfolio-link" href="/" role="menuitem">Portfolio</a>
-            </li>
-            <li role="presentation">
-              <a id="contact-link" href="/" role="menuitem">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <main id="main" class="inner cover" role="main">
-      <!-- Main Content comes here -->
     </main>
+
 
     <footer id="footer" class="" role="footer">
       <section>
@@ -168,13 +161,8 @@
       </section>
     </footer>
     
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="/js/jquery-1.11.1.min.js"></script> -->
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!-- Handlebars -->
-    <!-- <script src="js/handlebars-v1.3.0.js"></script> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="/js/bootstrap.min.js"></script> -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="/js/main.js"></script>

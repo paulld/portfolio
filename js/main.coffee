@@ -1,27 +1,16 @@
 $ ->
+  unsetActive = () ->
+    $('#header-navlinks').children().removeClass('active')
+
   setActive = (lnk) ->
     lnk = $(lnk)
-    $('#header-navlinks').children().removeClass('active')
-    lnk.parent().addClass('active')
+    unsetActive()
+    lnk.addClass('active')
 
-  biographyTemplate = Handlebars.compile $("#biography-template").html()
-  portfolioTemplate = Handlebars.compile $("#portfolio-template").html()
-  contactTemplate = Handlebars.compile $("#contact-template").html()
-  
-  main = $('#main')
-  main.html biographyTemplate
-
-  $('#header-navlinks').on 'click', '#biography-link', (e) ->
+  $('#header-navlinks li').on 'click', (e) ->
     e.preventDefault()
-    main.html biographyTemplate()
-    setActive('#biography-link')
-
-  $('#header-navlinks').on 'click', '#portfolio-link', (e) ->
-    e.preventDefault()
-    main.html portfolioTemplate()
-    setActive('#portfolio-link')
-
-  $('#header-navlinks').on 'click', '#contact-link', (e) ->
-    e.preventDefault()
-    main.html contactTemplate()
-    setActive('#contact-link')
+    setActive(@)
+    newTab = '#' + e.target.id.replace('-link', '')
+    for otherTabs in ['#biography', '#skillset', '#portfolio', '#contact']
+      $(otherTabs).hide()
+    $(newTab).show()
