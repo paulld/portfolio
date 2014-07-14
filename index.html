@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>paul ld | web development</title>
 
-    <!-- Bootstrap -->
     <!-- <link href="/css/bootstrap.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
@@ -35,10 +34,9 @@
 
   </head>
 
-
   <body>
 
-    <header id="header" role="header">
+    <header id="header" role="banner">
       <div class="head-small">
         <div class="inner" role="navigation">
           <div class="pld-logo">
@@ -49,11 +47,11 @@
             <li class="active" role="presentation">
               <a id="biography-link" href="/" role="menuitem">Biography</a>
             </li>
-            <li role="presentation" data="skillset">
-              <a id="skillset-link" href="/" role="menuitem"  data="skillset">Skillset</a>
-            </li>
             <li role="presentation">
               <a id="portfolio-link" href="/" role="menuitem">Portfolio</a>
+            </li>
+            <li role="presentation" data="skillset">
+              <a id="skillset-link" href="/" role="menuitem"  data="skillset">Skillset</a>
             </li>
             <li role="presentation">
               <a id="contact-link" href="/" role="menuitem">Contact</a>
@@ -71,12 +69,14 @@
           <h1 class="cover-heading">About me</h1>
         </header>
         <img src="/assets/images/paulld-profile-picture.jpg" class="profile-picture">
-        <p class="lead">Welcome to my site!<br>
-        I&rsquo;m Paul Lugagne Delpon, a former investment banker turned a passionate web developer. I made the move to do things I love: I not only write code to make ideas happen, but I also enjoy building 
-
-        building web applications 
-        <br>
-        I believe that two among my favorite activities, coding and sports, have the same keys to success: fun and practice.</p>
+        <p class="lead lead-biography">Welcome to my site!</p>
+        <p class="lead lead-biography">I&rsquo;m Paul Lugagne Delpon, a former investment banker turned a
+        passionate web developer. I made the move to do things I love:<br>
+        I not only write code to build great applications, but I also enjoy brainstorming, planning and implementing
+        business ideas. I build web applications with accessibility, design and user experience in mind.</p>
+        <p class="lead lead-biography">
+        I believe that two among my favorite activities, coding and sports,<br>
+        have the same keys to success: fun and practice.</p>
       </section>
 
       <section id="portfolio" class="main-width-x-medium main-height-large" style="display: none">
@@ -92,7 +92,7 @@
             </div>
             <div class="col-lg-6 col-md-5">
               <h2>Predikt</h2>
-              <p class="portfolio-description">Sport bets simulation application. Created in 2014 at General Assembly.</p>
+              <p class="portfolio-description">Sports bet simulation tool.</p>
               <p class="portfolio-tools"><u>Frameworks, Database & Others</u>: Ruby on Rails, AngularJS, PostgreSQL, built-in JSON API, built-in authentification process.</p>
               <p class="portfolio-tools"><u>Languages</u>: Ruby, CoffeeScript, Slim, CSS3, Less, Responsive Design.</p>
               <a class="btn btn-md btn-default" href="https://github.com/paulld/prediktapp">View Repo <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -107,7 +107,7 @@
             </div>
             <div class="col-lg-6 col-md-5">
               <h2>Chattr</h2>
-              <p class="portfolio-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+              <p class="portfolio-description">Open-source Chat application</p>
               <p class="portfolio-tools"><u>Framework & Database</u>: Meteor, MongoDB.</p>
               <p class="portfolio-tools"><u>Languages</u>: CoffeeScript, HTML5, CSS3, Less, Responsive Design.</p>
               <a class="btn btn-md btn-default" href="https://github.com/paulld/chattr">View Repo <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -122,7 +122,7 @@
             </div>
             <div class="col-lg-6 col-md-5">
               <h2>ArtyPedia</h2>
-              <p class="portfolio-description">Art library designed to be an open-source project.</p>
+              <p class="portfolio-description">Wiki-like Art library.</p>
               <p class="portfolio-tools"><u>Framework</u>: Ember.js</p>
               <p class="portfolio-tools"><u>Languagues</u>: CoffeeScript, EmberScript, Emblem, Stylus.</p>
               <a class="btn btn-md btn-default" href="https://github.com/paulld/artypedia-embercli">View Repo <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -154,8 +154,8 @@
             <dt>Markup languages</dt>
             <dd>HTML5, Slim, Emblem</dd>
             
-            <dt>Programming</dt>
-            <dd>JavaScript, jQuery, Ruby, CoffeeScript, EmberScript</dd>
+            <dt>Programming languages</dt>
+            <dd>JavaScript, CoffeeScript, jQuery, Ruby, EmberScript</dd>
 
             <dt>Frameworks</dt>
             <dd>Ruby on Rails, Meteor, AngularJS, Ember.js, Sinatra</dd>
@@ -164,16 +164,16 @@
             <dd>CSS3, LESS, Stylus, Responsive design, Bootstrap</dd>
 
             <dt>Databases</dt>
-            <dd>JSON API build on PostgreSQL, MongoDB</dd>
+            <dd>PostgreSQL, MongoDB, built-in JSON API</dd>
 
-            <dt>Design software</dt>
-            <dd>Adobe Photoshop, Illustrator, inDesign</dd>
+            <dt>Methodologies</dt>
+            <dd>Agile, TDD/BDD, RSpec, Laika</dd>
 
             <dt>Management</dt>
             <dd>GitHub, Pivotal Tracker, Asana</dd>
 
-            <dt>Methodologies</dt>
-            <dd>Agile, TDD/BDD, RSpec, Laika</dd>
+            <dt>Design software</dt>
+            <dd>Adobe Photoshop, Illustrator, inDesign</dd>
 
           </dl>
         </div>
@@ -183,20 +183,20 @@
         <header>
           <h1 class="cover-heading">Contact Me</h1>
         </header>
-        <p class="lead">
-          <br>
+        <p class="lead contact-subtitle">
+          I would love to hear from you!
+        </p>
+        <p class="lead contact-text">
           Please contact me by email: &nbsp;
           <a href="mailto:info@paulld.com" name="Send me an email">
             info@paulld.com
           </a>
-        </p>
-        <p class="lead">
           or via Skype: &nbsp;
           <a href="skype:paul.ld?add" name="Add me on Skype">
             paul.ld
           </a>
         </p>
-        <p class="lead">
+        <p class="lead contact-text">
           <br>Alternatively, you may visit my 
           <a href="https://github.com/paulld" name="View my Github account">
             GitHub 
@@ -212,7 +212,7 @@
     </main>
 
 
-    <footer id="footer" class="" role="footer">
+    <footer id="footer" role="footer">
       <section>
         <header>
           <h1 class="sr-only">Personal accounts</h1>
