@@ -14,7 +14,9 @@ body {
   padding: 30px;
 }
 
-
+.container {
+  width: 100%;
+}
 /* HEADER */
 
 .masthead-nav > li {
@@ -82,6 +84,10 @@ ul.social-media {
 .lead {
   font-size: 19px;
 }
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
 
 .dl-horizontal {
   font-size: 16px;
@@ -90,10 +96,18 @@ ul.social-media {
   line-height: 1.6;
 }
 .dl-horizontal dt {
-  font-weight: 500;
+  font-weight: 400;
 }
 .dl-horizontal dd {
   margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.portfolio-description {
+  margin-bottom: 20px;
+}
+.portfolio-tools {
+  font-weight: 400;
 }
 
 a,
@@ -108,6 +122,7 @@ a:hover {
   text-shadow: none;
   background-color: #fff;
   border: 1px solid #fff;
+  margin: 15px;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -136,10 +151,14 @@ a:hover {
 @media (min-width: 992px) {
   .head-small,
   .main-width-small,
-  .main-width-medium {
+  .main-width-medium,
+  .main-width-x-medium {
     width: 700px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .main-width-x-medium {
+    width: 950px;
   }
   .main-width-medium {
     width: 800px;
@@ -150,6 +169,10 @@ a:hover {
   .main-height-small {
     margin-top: 200px;
     margin-bottom: 200px;
+  }
+  .main-height-medium {
+    margin-top: 180px;
+    margin-bottom: 120px;
   }
   .main-height-large {
     margin-top: 120px;
