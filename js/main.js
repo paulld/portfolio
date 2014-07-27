@@ -11,15 +11,15 @@
       return lnk.addClass('active');
     };
     return $('#header-navlinks li').on('click', function(e) {
-      var newTab, otherTabs, _i, _len, _ref;
+      var newTab, otherTab, _i, _len, _ref;
       e.preventDefault();
       setActive(this);
-      newTab = '#' + e.target.id.replace('-link', '');
       _ref = ['#biography', '#skillset', '#portfolio', '#contact'];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        otherTabs = _ref[_i];
-        $(otherTabs).hide();
+        otherTab = _ref[_i];
+        $(otherTab).hide();
       }
+      newTab = '#' + e.target.id.replace('-link', '');
       return $(newTab).show();
     });
   });

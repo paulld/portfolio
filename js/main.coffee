@@ -10,7 +10,7 @@ $ ->
   $('#header-navlinks li').on 'click', (e) ->
     e.preventDefault()
     setActive(@)
+    for otherTab in ['#biography', '#skillset', '#portfolio', '#contact']
+      $(otherTab).hide()
     newTab = '#' + e.target.id.replace('-link', '')
-    for otherTabs in ['#biography', '#skillset', '#portfolio', '#contact']
-      $(otherTabs).hide()
     $(newTab).show()
