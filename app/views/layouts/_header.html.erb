@@ -1,0 +1,28 @@
+<div class="head-small">
+  <div class="inner" role="navigation">
+    <div class="pld-logo">
+      <h1 class="sr-only">paul ld | web development</h1>
+      <!-- <img src="/assets/images/paulld-logo-webdev.svg" alt="Paul Lugagne Delpon logo" width="170px"> -->
+      <%= image_tag 'paulld-logo-webdev.svg' %>
+    </div>
+    <ul id="header-navlinks" class="nav masthead-nav" role="menubar">
+      <!-- <li class="active" role="presentation">
+        <a id="biography-link" href="/" role="menuitem">Biography</a>
+      </li> -->
+      <li role="presentation" class="<%= is_active?(root_path)%>"><%= link_to "Biography", root_path %></li>
+      <li role="presentation" class="<%= is_active?(portfolio_path)%>"><%= link_to "Portfolio", portfolio_path %></li>
+      <li role="presentation" class="<%= is_active?(skillset_path)%>"><%= link_to "Skillset", skillset_path %></li>
+      <li role="presentation" class="<%= is_active?(contact_path)%>"><%= link_to "Contact", contact_path %></li>
+
+      <!-- <li role="presentation">
+        <a id="portfolio-link" href="/" role="menuitem">Portfolio</a>
+      </li> -->
+      <!-- <li role="presentation" data="skillset">
+        <a id="skillset-link" href="/" role="menuitem"  data="skillset">Skillset</a>
+      </li> -->
+      <!-- <li role="presentation">
+        <a id="contact-link" href="/" role="menuitem">Contact</a>
+      </li> -->
+    </ul>
+  </div>
+</div>
