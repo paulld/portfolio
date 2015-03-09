@@ -1,0 +1,238 @@
+/* GENERAL LAYOUT */
+
+html,
+body {
+  height: 100%;
+  background-color: #555;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.inner {
+  padding: 30px;
+}
+
+.container {
+  width: 100%;
+}
+/* HEADER */
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.pld-logo {
+  float: left;
+}
+.pld-logo img {
+  width: 170px;
+}
+
+
+
+/* FOOTER  */
+
+ul.social-media {
+  margin-bottom: 30px;
+}
+.social-media > li {
+  color: hsla(0,50%,100%,1);
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+}
+.social-media > li + li {
+  margin-left: 20px;
+}
+.social-media > li > a:hover {
+  color: #181818;
+}
+
+
+/* MAIN */
+
+.cover-heading {
+  margin: 10px 0 30px;
+}
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 0 30px;
+}
+.lead {
+  font-size: 19px;
+}
+.lead-biography {
+  margin-bottom: 5px;
+}
+.contact-subtitle {
+  margin: 40px 0;
+}
+.contact-text {
+  font-size: 16px;
+}
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.dl-horizontal {
+  font-size: 16px;
+}
+.dl-horizontal dt, dd {
+  line-height: 1.6;
+}
+.dl-horizontal dt {
+  font-weight: 400;
+}
+.dl-horizontal dd {
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.portfolio-description {
+  margin-bottom: 20px;
+  letter-spacing: 0.06em;
+}
+.portfolio-tools {
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.07em;
+}
+.skills-list {
+  letter-spacing: 0.06em;
+}
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+a.portfolio-link {
+  border: 1px solid transparent;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 90%;
+  letter-spacing: normal;
+  white-space: nowrap;
+}
+a.portfolio-link:hover {
+  background-color: #f9f2f4;
+  border-color: #f9f2f4;
+  border-radius: 4px;
+  color: #c7254e;
+  /*font-family: Menlo,Monaco,Consolas,"Courier New",monospace;*/
+  /*font-size: 90%;*/
+  /*letter-spacing: normal;*/
+  /*white-space: nowrap;*/
+}
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+  margin: 15px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) {
+  .masthead-nav {
+    float: right;
+  }
+  .dl-horizontal dt {
+    width: 265px;
+  }
+  .dl-horizontal dd {
+    text-align: left;
+    margin-left: 310px;
+  }
+  .dl-horizontal dt, dd {
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 992px) {
+  .head-small,
+  .main-width-small,
+  .main-width-medium,
+  .main-width-x-medium {
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .main-width-x-medium {
+    width: 1078px;
+  }
+  .main-width-medium {
+    width: 800px;
+  }
+  .main-width-small {
+    width: 640px;
+  }
+  .main-height-small {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  .main-height-medium {
+    margin-top: 180px;
+    margin-bottom: 60px;
+  }
+  .main-height-large {
+    margin-top: 120px;
+  }
+  .dl-horizontal {
+    margin: 50px 0 30px;
+  }
+  .dl-horizontal dt {
+    width: 360px;
+  }
+  .dl-horizontal dd {
+    text-align: left;
+    margin-left: 398px;
+  }
+}
+@media (max-width: 992px) {
+  .masthead-nav, .pld-logo {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .pld-logo {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-top: 15px;
+  }
+
+}

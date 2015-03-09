@@ -1,0 +1,11 @@
+{
+  "name": "paul ld",
+  "version": "0.2",
+  "main": "",
+  "private": true,
+  "dependencies": {
+    "fontawesome": "4.3.0",
+    "bootstrap": "3.3.2",
+    "jquery": "2.1.3"
+  }
+}
