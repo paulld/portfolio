@@ -164,6 +164,19 @@ a.portfolio-link:hover {
   font-weight: bold;
 }
 
+/* CONTACT FORM */
+.input.contact_name, .input.contact_email, .input.contact_telephone {
+  display: inline-block;
+}
+.form-control.contact-form-inline {
+  display: inline-block;
+  /*width: auto;*/
+  width: 220px;
+}
+.form-control.contact-message {
+  height: 80px;
+}
+
 
 /* RESPONSIVE */
 
@@ -237,3 +250,4 @@ a.portfolio-link:hover {
   }
 
 }
+

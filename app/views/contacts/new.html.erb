@@ -1,0 +1,58 @@
+<section id="contact" class="main-width-small main-height-medium">
+  <header>
+    <h1 class="cover-heading">I would love to hear from you!</h1>
+  </header>
+  <p class="lead contact-text">
+    Please leave me a message and I will get back to you shortly:
+  </p>
+
+  <div align="center">
+    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+      <div class="form-group">
+        <%= f.input :name, :required => true, input_html: { class: 'form-control contact-form-inline' }, label: false, placeholder: 'Your Name' %>
+        <%= f.input :email, :required => true, input_html: { class: 'form-control contact-form-inline' }, label: false, placeholder: 'Email Address' %>
+        <%= f.input :telephone, :required => false, input_html: { class: 'form-control contact-form-inline' }, label: false, placeholder: 'Telephone number' %>
+      </div>
+      <div class="form-group">
+        <%= f.input :message, :as => :text, :required => true, input_html: { class: 'form-control contact-message' }, label: false, placeholder: 'Your message' %>
+      </div>
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <div>
+        </br>
+        <%= f.button :submit, 'Send message', :class=> "btn btn-lg btn-default" %>
+      </div>
+    <% end %>
+  </div>
+<!-- 
+  <p class="lead contact-text">
+    <br>Please contact me by email:&nbsp;
+    <a class="portfolio-link" href="mailto:info@paulld.com" name="Send me an email">info@paulld.com</a>
+    &nbsp;or via Skype:&nbsp;
+    <a class="portfolio-link" href="skype:paul.ld?add" name="Add me on Skype">
+      paul.ld
+    </a>
+  </p> -->
+
+  <p class="lead contact-text">
+    <br>Alternatively, you may visit my&nbsp;
+    <a class="portfolio-link" href="https://github.com/paulld" name="View my Github account">GitHub</a>
+    &nbsp;and&nbsp;
+    <a class="portfolio-link" href="https://www.linkedin.com/in/paullugagnedelpon" name="View my Linkedin profile">LinkeIn</a>
+    &nbsp;accounts
+  </p>
+  <p class="lead contact-text">
+    <br>I also&nbsp;
+    <a class="portfolio-link" href="https://twitter.com/paul__ld" name="View my Twitter page">Tweet</a>
+    &nbsp;in English and French, and I am reachable via 
+    <a class="portfolio-link" href="skype:paul.ld?add" name="Add me on Skype">
+      Skype
+    </a>
+  </p>
+</section>
+
+
+
+
+

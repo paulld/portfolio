@@ -59,3 +59,4 @@ gem 'dotenv-rails', :groups => [:development, :test]
 gem 'rails_12factor', group: :production
 
 gem 'mail_form'
+gem 'simple_form'
