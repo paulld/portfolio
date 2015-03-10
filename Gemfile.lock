@@ -59,6 +59,9 @@ GEM
     json (1.8.2)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    mail_form (1.5.0)
+      actionmailer (>= 3.2, < 5)
+      activemodel (>= 3.2, < 5)
     meta_request (0.3.4)
       callsite (~> 0.0, >= 0.0.11)
       rack-contrib (~> 1.1)
@@ -139,6 +142,7 @@ DEPENDENCIES
   dotenv-rails
   font-awesome-sass
   jquery-rails
+  mail_form
   meta_request
   pg
   rails (= 4.1.8)
