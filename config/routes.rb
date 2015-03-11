@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   get 'skillset'    => 'static_pages#skillset',   as: 'skillset'
   # get 'contact'     => 'static_pages#contact',    as: 'contact'
 
-  match '/contact',     to: 'contacts#new',             via: 'get'
-  resources "contacts", only: [:new, :create]
+  # match '/contact',     to: 'contacts#new',             via: 'get'
+  # resources "contacts", only: [:new, :create]
+
+  get 'contact'   => 'contacts#new', as: 'contact'
+  post 'contact'  => 'contacts#create', as: 'contacts'
 
 end

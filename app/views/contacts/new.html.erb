@@ -1,27 +1,26 @@
-<section id="contact" class="main-width-small main-height-medium">
+<section id="skillset" class="main-width-small main-height-large">
   <header>
     <h1 class="cover-heading">I would love to hear from you!</h1>
   </header>
   <p class="lead contact-text">
-    Please leave me a message and I will get back to you shortly:
+    Please leave me a message<br>and I will get back to you shortly:
   </p>
 
   <div align="center">
-    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= simple_form_for @contact, :html => {:class => 'form-horizontal contact-form' } do |f| %>
       <div class="form-group">
-        <%= f.input :name, :required => true, input_html: { class: 'form-control contact-form-inline' }, label: false, placeholder: 'Your Name' %>
-        <%= f.input :email, :required => true, input_html: { class: 'form-control contact-form-inline' }, label: false, placeholder: 'Email Address' %>
-        <%= f.input :telephone, :required => false, input_html: { class: 'form-control contact-form-inline' }, label: false, placeholder: 'Telephone number' %>
+        <%= f.input :name, :required => true, input_html: { class: 'form-control' }, label: false, placeholder: 'Your Name / Company' %>
+        <%= f.input :email, :required => true, input_html: { class: 'form-control' }, label: false, placeholder: 'Your Email Address' %>
+        <%= f.input :telephone, :required => false, input_html: { class: 'form-control' }, label: false, placeholder: 'Your Telephone number' %>
       </div>
       <div class="form-group">
-        <%= f.input :message, :as => :text, :required => true, input_html: { class: 'form-control contact-message' }, label: false, placeholder: 'Your message' %>
+        <%= f.input :message, :as => :text, :required => true, input_html: { class: 'form-control' }, label: false, placeholder: 'How can I help you?' %>
       </div>
       <div class= "hidden">
         <%= f.input :nickname, :hint => 'Leave this field blank!' %>
       </div>
-      <div>
-        </br>
-        <%= f.button :submit, 'Send message', :class=> "btn btn-lg btn-default" %>
+      <div class="form-group">
+        <%= f.button :submit, 'Send message', :class=> "btn btn-lg btn-default btn-contact" %>
       </div>
     <% end %>
   </div>
@@ -35,21 +34,21 @@
     </a>
   </p> -->
 
-  <p class="lead contact-text">
-    <br>Alternatively, you may visit my&nbsp;
+  <!-- <p class="lead contact-text">
+    Alternatively, you may visit my&nbsp;
     <a class="portfolio-link" href="https://github.com/paulld" name="View my Github account">GitHub</a>
     &nbsp;and&nbsp;
     <a class="portfolio-link" href="https://www.linkedin.com/in/paullugagnedelpon" name="View my Linkedin profile">LinkeIn</a>
     &nbsp;accounts
   </p>
   <p class="lead contact-text">
-    <br>I also&nbsp;
+    I also&nbsp;
     <a class="portfolio-link" href="https://twitter.com/paul__ld" name="View my Twitter page">Tweet</a>
     &nbsp;in English and French, and I am reachable via 
     <a class="portfolio-link" href="skype:paul.ld?add" name="Add me on Skype">
       Skype
     </a>
-  </p>
+  </p> -->
 </section>
 
 
