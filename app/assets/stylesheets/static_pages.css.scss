@@ -23,7 +23,7 @@ body {
   display: inline-block;
 }
 .masthead-nav > li + li {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 .masthead-nav > li > a {
   padding-right: 0;
@@ -69,7 +69,7 @@ ul.social-media {
   margin-left: 20px;
 }
 .social-media > li > a:hover {
-  color: #181818;
+  color: #333;
 }
 
 
@@ -96,6 +96,7 @@ ul.social-media {
 }
 .contact-text {
   font-size: 20px;
+  margin: 40px 0;
 }
 h2 {
   font-size: 24px;
@@ -150,22 +151,75 @@ a.portfolio-link:hover {
   /*letter-spacing: normal;*/
   /*white-space: nowrap;*/
 }
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
+.btn.btn-default,
+.btn.btn-default:hover,
+.btn.btn-default:focus {
   color: #333;
   text-shadow: none;
   background-color: #fff;
   border: 1px solid #fff;
   margin: 15px;
 }
+.btn.btn-default {
+  color: #555;
+}
+
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
 }
 
+/* CONTACT FORM */
+.contact-text.contact-links {
+  margin-bottom: 0;
+}
+.input.contact_name, .input.contact_email, .input.contact_telephone {
+  display: inline-block;
+}
+.contact-form > .form-group > div > input.form-control {
+  display: inline-block;
+  /*width: auto;*/
+  width: 220px;
+}
+.contact-form > .form-group > div > textarea.form-control {
+  max-width: 670px;
+  height: 80px;
+}
+.input.field_with_errors > input,
+.input.field_with_errors > textarea {
+  -webkit-box-shadow: 1px 1px 3px rgba(255, 50, 0, 0.875);
+          box-shadow: 1px 1px 3px rgba(255, 50, 0, 0.875);
+  color: rgba(225, 70, 70, 0.875);
+}
+.input.field_with_errors > input::-webkit-input-placeholder,
+.input.field_with_errors > textarea::-webkit-input-placeholder {
+   color: rgba(225, 70, 70, 0.875);
+}
+.input.field_with_errors > input:-moz-placeholder,
+.input.field_with_errors > textarea:-moz-placeholder { /* Firefox 18- */
+   color: rgba(225, 70, 70, 0.875);  
+}
+.input.field_with_errors > input::-moz-placeholder,
+.input.field_with_errors > textarea::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(225, 70, 70, 0.875);  
+}
+.input.field_with_errors > input:-ms-input-placeholder,
+.input.field_with_errors > textarea:-ms-input-placeholder {  
+   color: rgba(225, 70, 70, 0.875);  
+}
+
 
 /* RESPONSIVE */
+
+@media (max-width: 698px) {
+  .contact-form > .form-group > div > input.form-control {
+    margin-top: 15px;
+    width: 350px;
+  }
+  .contact-form > .form-group > div > textarea.form-control {
+    width: 350px;
+  }
+}
 
 @media (min-width: 768px) {
   .masthead-nav {
@@ -237,3 +291,4 @@ a.portfolio-link:hover {
   }
 
 }
+
