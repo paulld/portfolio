@@ -170,6 +170,9 @@ a.portfolio-link:hover {
 }
 
 /* CONTACT FORM */
+.contact-text.contact-links {
+  margin-bottom: 0;
+}
 .input.contact_name, .input.contact_email, .input.contact_telephone {
   display: inline-block;
 }
