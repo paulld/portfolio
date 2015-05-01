@@ -24,37 +24,40 @@ body {
 #header {
   height: 180px;
 }
-.masthead-nav > li {
-  display: inline-block;
+.masthead-nav {
+  & > li {
+    display: inline-block;
+    & > a {
+      padding-right: 0;
+      padding-left: 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff; /* IE8 proofing */
+      color: rgba(255,255,255,.75);
+      border-bottom: 2px solid transparent;
+      &:hover, &:focus {
+        background-color: transparent;
+        border-bottom-color: rgba(255,255,255,.25);
+      }
+    }
+  }
+  & > li + li {
+    margin-left: 20px;
+  }
+  & > .active {
+    & > a, & > a:hover, & > a:focus {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+  }
+
 }
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
+
 .pld-logo {
   float: left;
-}
-.pld-logo img {
-  width: 170px;
+  img {
+    width: 170px;
+  }
 }
 
 
@@ -65,20 +68,19 @@ body {
   height: 80px;
 }
 
-ul.social-media {
-  // margin-bottom: 30px;
-}
-.social-media > li {
-  color: hsla(0,50%,100%,1);
-  font-size: 45px;
-  margin: 0;
-  padding: 0;
-}
-.social-media > li + li {
-  margin-left: 40px;
-}
-.social-media > li > a:hover {
-  color: #333;
+.social-media {
+  & > li {
+    color: hsla(0,50%,100%,1);
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+    & > a:hover {
+      color: #333;
+    }
+  }
+  & > li + li {
+    margin-left: 40px;
+  }
 }
 
 
@@ -138,16 +140,16 @@ h2 {
 
 .dl-horizontal {
   font-size: 16px;
-}
-.dl-horizontal dt, dd {
-  line-height: 1.6;
-}
-.dl-horizontal dt {
-  font-weight: 400;
-}
-.dl-horizontal dd {
-  margin-bottom: 10px;
-  font-weight: 100;
+  dt, dd {
+    line-height: 1.6;
+  }
+  dt {
+    font-weight: 400;
+  }
+  dd {
+    margin-bottom: 10px;
+    font-weight: 100;
+  }
 }
 
 .portfolio-description {
@@ -173,16 +175,16 @@ a.portfolio-link {
   font-size: 90%;
   letter-spacing: normal;
   white-space: nowrap;
-}
-a.portfolio-link:hover {
-  background-color: #f9f2f4;
-  border-color: #f9f2f4;
-  border-radius: 4px;
-  color: #c7254e;
-  /*font-family: Menlo,Monaco,Consolas,"Courier New",monospace;*/
-  /*font-size: 90%;*/
-  /*letter-spacing: normal;*/
-  /*white-space: nowrap;*/
+  &:hover {
+    background-color: #f9f2f4;
+    border-color: #f9f2f4;
+    border-radius: 4px;
+    color: #c7254e;
+    /*font-family: Menlo,Monaco,Consolas,"Courier New",monospace;*/
+    /*font-size: 90%;*/
+    /*letter-spacing: normal;*/
+    /*white-space: nowrap;*/
+  }
 }
 .btn.btn-default,
 .btn.btn-default:hover,
@@ -258,15 +260,17 @@ a.portfolio-link:hover {
   .masthead-nav {
     float: right;
   }
-  .dl-horizontal dt {
-    width: 265px;
-  }
-  .dl-horizontal dd {
-    text-align: left;
-    margin-left: 310px;
-  }
-  .dl-horizontal dt, dd {
-    line-height: 1.6;
+  .dl-horizontal {
+    dt {
+      width: 265px;
+    }
+    dd {
+      text-align: left;
+      margin-left: 310px;
+    }
+    dt, dd {
+      line-height: 1.6;
+    }
   }
 }
 
@@ -301,13 +305,13 @@ a.portfolio-link:hover {
   }
   .dl-horizontal {
     margin: 50px 0 30px;
-  }
-  .dl-horizontal dt {
-    width: 360px;
-  }
-  .dl-horizontal dd {
-    text-align: left;
-    margin-left: 398px;
+    dt {
+      width: 360px;
+    }
+    dd {
+      text-align: left;
+      margin-left: 398px;
+    }
   }
 }
 @media (max-width: 992px) {
@@ -324,7 +328,6 @@ a.portfolio-link:hover {
     text-align: center;
   }
   .pld-logo {
-    // margin-bottom: 20px;
     img {
       width: 130px;
     }
