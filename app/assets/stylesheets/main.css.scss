@@ -3,26 +3,24 @@
 html,
 body {
   height: 100%;
-  // background-color: #555;
-  background-color: hsla(208, 19%, 45%, 1);
+  background-color: #555;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
-.inner {
-  padding: 30px;
-}
-.container {
-  width: 100%;
-}
+// .container {
+//   width: 100%;
+// }
 
+$header-height: 180px;
+$footer-height: 80px;
 
 /* HEADER */
 
 #header {
-  height: 180px;
+  height: $header-height;
 }
 .masthead-nav > li {
   display: inline-block;
@@ -57,17 +55,14 @@ body {
   width: 170px;
 }
 
-
-
 /* FOOTER  */
 
 #footer, .push {
-  height: 80px;
+  height: $footer-height;
 }
-
-ul.social-media {
+// ul.social-media {
   // margin-bottom: 30px;
-}
+// }
 .social-media > li {
   color: hsla(0,50%,100%,1);
   font-size: 45px;
@@ -87,12 +82,7 @@ ul.social-media {
 #main {
   min-height: 100%;
   margin: -180px auto -80px;
-  padding: 200px 15px 20px;
-}
-.main-width-small,
-.main-width-medium,
-.main-width-x-medium {
-  position: relative;
+  padding: $header-height 15px $footer-height;
 }
 .align-vertical-wrapper {
   position: absolute; 
@@ -107,14 +97,15 @@ ul.social-media {
   display: table-cell; 
   vertical-align: middle; 
 }
-.cover-heading {
-  margin: 10px 0 30px;
-}
+
+// .cover-heading {
+//   margin: 10px 0 30px;
+// }
 .profile-picture {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  margin: 0 0 30px;
+  margin: 0 auto 20px;
 }
 .lead {
   font-size: 19px;
@@ -151,7 +142,7 @@ h2 {
 }
 
 .portfolio-description {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   letter-spacing: 0.06em;
 }
 .portfolio-tools {
@@ -313,7 +304,7 @@ a.portfolio-link:hover {
 @media (max-width: 992px) {
   #main {
     margin: -230px auto -80px;
-    padding: 230px 15px 20px;
+    padding: 230px 15px 80px;
   }
   #header {
     height: 230px;
@@ -334,4 +325,6 @@ a.portfolio-link:hover {
   }
 
 }
+
+
 

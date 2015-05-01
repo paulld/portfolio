@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
 
     if @contact.deliver
       Message.create(contact_params)
-      flash.now[:notice] = 'Thank you for your message! I will come back to you as soon as possible'
+      flash.now[:notice] = 'Thank you for your message! I will get back to you as soon as possible'
     else
       flash.now[:error] = 'You message could not be sent. Please try again.'
       render :new
